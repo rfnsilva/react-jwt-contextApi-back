@@ -9,6 +9,7 @@ import cors from 'cors'
 const routes = Router();
 routes.use(cors());
 
+//rota raiz
 routes.get('/', (request: Request, response: Response) => {
     return response.json({ message: "PRONTO CARALHOOOOO !" })
 });

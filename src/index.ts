@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import {createConnection} from "typeorm";
+import { createConnection } from "typeorm";
 import express from 'express';
 import * as bodyParser from "body-parser";
 import routes from "./routes";
@@ -15,3 +15,5 @@ createConnection();
 
 
 app.listen(process.env.PORT || 3333);
+
+export default app;
